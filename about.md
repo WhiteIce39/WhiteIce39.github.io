@@ -15,4 +15,4 @@ Hello，这是白冰在Github上留下的博客。本人地理专业，仅略懂
 ## 版权声明
 
 CC BY-SA
-![GitHub Logo](images/by-nc.png)
+![GitHub Logo](images/by-sa.png)
