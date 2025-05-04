@@ -1,4 +1,4 @@
-window。live2d_settings = Array(); /*
+window.live2d_settings = Array(); /*
 
     く__,.ヘヽ.　　　　/　,ー､ 〉
     　　　　　＼ ', !-─‐-i　/　/´
