@@ -14,7 +14,7 @@
 }
 .waifu-tips {
     opacity: 0;
-    margin: -20px 20px;
+    margin: -256px 20px;
     right: 120px;
 	left: auto;
     padding: 5px 10px;
@@ -34,8 +34,8 @@
 .waifu-tool {
     display: none;
     color: #aaa;
-    top: 50px;
-    right: 10px;
+    top: -200px;
+    right: 30px;
     position: absolute;
 }
 .waifu:hover .waifu-tool {
@@ -51,7 +51,12 @@
     color: #34495e;
 }
 .waifu #live2d{
-    position: relative;
+    position: absolute; /* 关键 */
+    right: 0;            /* 贴紧右边 */
+    bottom: 0;           /* 贴紧底部 */
+    width: auto;         /* 或你需要的固定值，如 250px */
+    height: auto;        /* 或你需要的固定值，如 400px */
+    pointer-events: auto;
 }
 
 @keyframes shake {
