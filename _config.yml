@@ -28,6 +28,7 @@ footer-links:
 footer-text: Copyright (c) 2025 WhiteIce39
 
 url: https://whiteice39.github.io
+baseurl: ""
 
 permalink: /:title/
 paginate_path: /page:num/
