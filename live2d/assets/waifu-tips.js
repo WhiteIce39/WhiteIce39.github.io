@@ -41,7 +41,7 @@ live2d_settings['canTurnToAboutPage']   = true;         // 显示 跳转关于�
 // 模型切换模式
 live2d_settings['modelStorage']         = true;         // 记录 ID (刷新后恢复)，可选 true(真), false(假)
 live2d_settings['modelRandMode']        = 'switch';     // 模型切换，可选 'rand'(随机), 'switch'(顺序)
-live2d_settings['modelTexturesRandMode']= 'switch';       // 材质切换，可选 'rand'(随机), 'switch'(顺序)
+live2d_settings['modelTexturesRandMode']= 'rand';       // 材质切换，可选 'rand'(随机), 'switch'(顺序)
 
 // 提示消息选项
 live2d_settings['showHitokoto']         = true;         // 显示一言
@@ -59,7 +59,7 @@ live2d_settings['waifuToolFont']        = '14px';       // 工具栏字体，例
 live2d_settings['waifuToolLine']        = '20px';       // 工具栏行高，例如 '20px', '36px'
 live2d_settings['waifuToolTop']         = '0px'         // 工具栏顶部边距，例如 '0px', '-60px'
 live2d_settings['waifuMinWidth']        = '768px';      // 面页小于 指定宽度 隐藏看板娘，例如 'disable'(禁用), '768px'
-live2d_settings['waifuEdgeSide']        = 'right:30';     // 看板娘贴边方向，例如 'left:0'(靠左 0px), 'right:30'(靠右 30px)
+live2d_settings['waifuEdgeSide']        = 'right:30px';     // 看板娘贴边方向，例如 'left:0'(靠左 0px), 'right:30'(靠右 30px)
 live2d_settings['waifuDraggable']       = 'unlimited';    // 拖拽样式，例如 'disable'(禁用), 'axis-x'(只能水平拖拽), 'unlimited'(自由拖拽)
 live2d_settings['waifuDraggableRevert'] = true;         // 松开鼠标还原拖拽位置，可选 true(真), false(假)
 
