@@ -1,7 +1,9 @@
 try {
+    const basePath = window.location.origin + '/live2d/assets/';
+
     // 创建 <link> 标签并监听其加载完成事件
     const link = $("<link>", {
-        href: "live2d/assets/waifu.css?v=1.4.2",
+        href: basePath + "waifu.css?v=1.4.2",
         rel: "stylesheet",
         type: "text/css"
     });
@@ -26,8 +28,8 @@ try {
 
         // 异步加载 JS 资源后再初始化
         $.when(
-            $.ajax({url: 'live2d/assets/waifu-tips.js?v=1.4.2', dataType: "script", cache: true}),
-            $.ajax({url: 'live2d/assets/live2d.js?v=1.0.5', dataType: "script", cache: true})
+            $.ajax({url: basePath + 'waifu-tips.js?v=1.4.2', dataType: "script", cache: true}),
+            $.ajax({url: basePath + 'live2d.js?v=1.0.5', dataType: "script", cache: true})
         ).done(function () {
             // 设置 Live2D 参数
             live2d_settings['hitokotoAPI'] = 'hitokoto.cn';
@@ -36,7 +38,7 @@ try {
             live2d_settings['modelStorage'] = true;
 
             // 初始化模型
-            initModel('live2d/assets/waifu-tips.json');
+            initModel(basePath + 'waifu-tips.json');
         });
     });
 
@@ -44,5 +46,5 @@ try {
     link.appendTo('head');
 
 } catch (err) {
-    console.log('[Error] JQuery is not defined.')
+    console.log('[Error] JQuery is not defined.');
 }
